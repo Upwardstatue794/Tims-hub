@@ -38,3 +38,11 @@ h1 {
     background-position: center center; 
     background-attachment: fixed; 
 }
+
+.cyberbackground {
+	background-size: cover;
+	background-image: url('images/cyber.jpg');
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-attachment: fixed; 
+}
