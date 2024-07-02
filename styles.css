@@ -46,3 +46,17 @@ h1 {
 	background-position: center center; 
 	background-attachment: fixed; 
 }
+
+.marketbackground {
+	background-size: cover;
+	background-image: url('images/steam.png');
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-attachment: fixed; 
+
+}
+
+h1 {
+	font-family: fantasy;
+	font-size: 45px;
+}

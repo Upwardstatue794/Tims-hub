@@ -1,4 +1,4 @@
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const proxyUrl = 'https://corsproxy.io/?';
 const apiUrl = 'https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=1245620&key=1E8306B6E43C01C9113F8EC285BFC0F5&steamid=76561199108435954';
 
 const achievementNames = {
@@ -56,7 +56,7 @@ fetch(proxyUrl + apiUrl)
       const descriptiveName = achievementNames[achievement.apiname] || "Unknown Achievement";
       const achievementElement = document.createElement('div');
       achievementElement.className = 'achievement';
-      achievementElement.textContent = `${descriptiveName}: ${achievement.achieved ? 'Achieved' : 'Not Achieved'}`;
+      achievementElement.textContent = `${descriptiveName}: ${achievement.achieved ? 'Achieved ✔' : 'Not Achieved❌'}`;
       container.appendChild(achievementElement);
     });
   })
